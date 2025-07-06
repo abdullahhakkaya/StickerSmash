@@ -1,50 +1,67 @@
-# Welcome to your Expo app 👋
+# StickerSmash
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+StickerSmash is a mobile application that allows you to select a photo from your gallery, add fun emoji stickers to it, and save your creations. This application is developed using React Native and Expo.
 
-## Get started
+## Installation and Setup
 
-1. Install dependencies
+Follow these steps to install and run the project on your local machine:
 
-   ```bash
-   npm install
-   ```
+1.  **Install Dependencies:**
+    ```bash
+    npm install
+    ```
 
-2. Start the app
+2.  **Start the Application:**
+    ```bash
+    npx expo start
+    ```
 
-   ```bash
-   npx expo start
-   ```
+This command will start the application in a development environment. You can access it via an Android emulator, iOS simulator, or the Expo Go app.
 
-In the output, you'll find options to open the app in a
+## Features
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+* **Photo Selection:** Choose a photo from your gallery or use the default background image.
+* **Add Stickers:** Add various emoji stickers to your photo.
+* **Reset:** Easily undo your changes.
+* **Save:** Save your edited photo to your gallery.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Screenshots
 
-## Get a fresh project
+<table>
+  <tr>
+    <td><img src="assets/screenshots/1-home.png" width="auto"></td>
+    <td><img src="assets/screenshots/2-about.png" width="auto"></td>
+    <td><img src="assets/screenshots/3.png" width="auto"></td>
+  </tr>
+  <tr>
+    <td><img src="assets/screenshots/4.png" width="auto"></td>
+    <td><img src="assets/screenshots/5.png" width="auto"></td>
+    <td><img src="assets/screenshots/6.png" width="auto"></td>
+  </tr>
+</table>
 
-When you're ready, run:
+## Technologies Used
 
-```bash
-npm run reset-project
-```
+The main dependencies of the project are specified in the `package.json` file:
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+* **Expo:** A framework and platform for developing React Native applications.
+* **React & React Native:** The core libraries for building the user interface.
+* **Expo Router:** Navigation management with file-based routing.
+* **React Navigation:** For in-app navigation.
+* **React Native Gesture Handler:** For managing touches and gestures.
+* **React Native Reanimated:** for creating advanced animations.
+* **React Native ViewShot:** For taking snapshots of components.
 
-## Learn more
+## Project Structure
 
-To learn more about developing your project with Expo, look at the following resources:
+The main directory structure of the project is as follows:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+* **app/**: Contains the screens and navigation logic of the application.
+    * **(tabs)/**: Houses the screens accessed via the bottom tab bar.
+* **assets/**: Contains static assets like images and icons.
+* **components/**: Contains reusable components used throughout the application.
+* **scripts/**: Contains helper scripts like project reset.
 
-## Join the community
+## License
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This is a private project and does not have a license.
